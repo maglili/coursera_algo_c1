@@ -2,9 +2,11 @@ def karatsuba(x: int, y: int) -> int:
     """
     Implement karatsuba multiplication.
     """
-    # basecase
+    # base case
     if (x < 10) or (y < 10):
         return x * y
+
+    # recursive
     else:
         n = len(str(max(x, y)))
         n_2 = round(n / 2)

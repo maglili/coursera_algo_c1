@@ -2,8 +2,11 @@ def sort_and_count(array, length):
     """
     Given a list, find its inversion.
     """
+    # base case
     if length == 1:
         return array, 0
+
+    # recursive
     else:
         # sort
         n = round(length / 2)
